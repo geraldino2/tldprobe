@@ -1,0 +1,8 @@
+com
+co
+org
+net
+edu
+gov
+info
+news
