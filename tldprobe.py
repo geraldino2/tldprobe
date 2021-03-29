@@ -16,4 +16,4 @@ with open('output/combinations-{}.txt'.format(base), 'a') as output_file:
 	with open('tlds.txt', 'r') as tlds_file:
 		for tld in tlds_file:
 			output_file.write("{}.{}".format(base, tld))
-subprocess.call(['httpx', '-l', 'output/combinations-{}.txt'.format(base), '-location', '-content-length', '-status-code', '-title', '-silent', '-ports', '80,443,8008,8080,8443', '-o', 'http-{}.txt'.format(base)])
+subprocess.call(['httpx', '-l', 'output/combinations-{}.txt'.format(base), '-location', '-content-length', '-status-code', '-title', '-silent', '-ports', '80,443,8008,8080,8443', '-o', 'output/http-{}.txt'.format(base)])
